@@ -1,18 +1,14 @@
+import { SolanaProvider } from '@factory/providers';
+import { Layout } from '@factory/ui';
 import { AppProps } from 'next/app';
-import Head from 'next/head';
 import './styles.css';
 
-function CustomApp({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <Head>
-        <title>Welcome to factory!</title>
-      </Head>
-      <main className="app">
-        <Component {...pageProps} />
-      </main>
-    </>
-  );
-}
+const CustomApp = ({ Component, pageProps }: AppProps) => (
+  <SolanaProvider>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  </SolanaProvider>
+);
 
 export default CustomApp;

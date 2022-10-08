@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react';
 import { useState } from 'react';
-import { Button, ButtonProps } from './button';
+import { Button, ButtonProps } from './theme-button';
 
 export default {
   component: Button,

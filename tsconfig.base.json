@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@factory/ui": ["libs/ui/src/index.ts"]
+      "@factory/hooks": ["libs/hooks/src/index.ts"],
+      "@factory/providers": ["libs/providers/src/index.ts"],
+      "@factory/ui": ["libs/ui/src/index.ts"],
+      "@factory/util": ["libs/util/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
