@@ -6,7 +6,7 @@ const Document = () => (
     <Head>
       <Script strategy="beforeInteractive" src="scripts/theme.js" />
     </Head>
-    <body className="h-full w-full bg-white dark:bg-gray-900 overflow-hidden">
+    <body className="h-full w-full bg-white dark:bg-gray-800 overflow-hidden">
       <Main />
       <NextScript />
     </body>

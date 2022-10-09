@@ -1,10 +1,8 @@
-import { useMobileMenu } from '@factory/hooks';
 import { NavLinks } from '../nav-links/nav-links';
 import { Dialog, Transition } from '@headlessui/react';
 import { CubeTransparentIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Dispatch, Fragment, SetStateAction } from 'react';
 
-/* eslint-disable-next-line */
 export interface MobileMenuProps {
   mobileMenuOpen: boolean;
   setMobileMenuOpen: Dispatch<SetStateAction<boolean>>;
