@@ -6,3 +6,7 @@ export const appendClasses = (
     ' ',
     typeof className === 'string' ? className : className.join(' ')
   );
+
+export function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(' ');
+}
