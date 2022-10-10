@@ -17,10 +17,7 @@ export const ShadowDriveProvider = ({
   useEffect(() => {
     (async () => {
       if (wallet?.publicKey) {
-        const drive = await new ShdwDrive(
-          connection,
-          wallet as AnchorWallet
-        ).init();
+        const drive = await new ShdwDrive(connection, wallet).init();
 
         const accounts = await drive.getStorageAccounts('v2');
 
@@ -31,7 +28,7 @@ export const ShadowDriveProvider = ({
             'v2'
           );
 
-          console.log('storage', storage);
+          console.log('create storage', storage);
         }
         console.log('Drive: ', drive, accounts);
       }

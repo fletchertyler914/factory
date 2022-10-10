@@ -63,5 +63,6 @@
       }
     }
   },
-  "defaultProject": "factory"
+  "defaultProject": "factory",
+  "plugins": ["@nxrs/cargo"]
 }
